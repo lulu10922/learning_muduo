@@ -120,10 +120,9 @@ TimerId TimerQueue::addTimer(const TimerCallback& cb,
                              double interval)
 {
   Timer* timer = new Timer(cb, when, interval);
-  /*loop_->runInLoop(
+  loop_->runInLoop(
       boost::bind(&TimerQueue::addTimerInLoop, this, timer));
-	  */
-  addTimerInLoop(timer);
+	
   return TimerId(timer, timer->sequence());
 }
 
@@ -133,20 +132,17 @@ TimerId TimerQueue::addTimer(TimerCallback&& cb,
                              double interval)
 {
   Timer* timer = new Timer(std::move(cb), when, interval);
-  /*loop_->runInLoop(
+  loop_->runInLoop(
       boost::bind(&TimerQueue::addTimerInLoop, this, timer));
-	  */
-  addTimerInLoop(timer);
+	  
   return TimerId(timer, timer->sequence());
 }
 #endif
 
 void TimerQueue::cancel(TimerId timerId)
 {
-  /*loop_->runInLoop(
+  loop_->runInLoop(
       boost::bind(&TimerQueue::cancelInLoop, this, timerId));
-	  */
-  cancelInLoop(timerId);
 }
 
 void TimerQueue::addTimerInLoop(Timer* timer)

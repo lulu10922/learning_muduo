@@ -1,3 +1,3 @@
-FILE(REMOVE_RECURSE
+file(REMOVE_RECURSE
   "../../lib/libmuduo_base_cpp11.a"
 )

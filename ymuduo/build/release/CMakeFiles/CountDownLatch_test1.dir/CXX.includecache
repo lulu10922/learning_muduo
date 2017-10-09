@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yahui/learning/learning_muduo/ymuduo/tests/CountDownLatch_test1.cc
+muduo/base/CountDownLatch.h
+-
+muduo/base/Thread.h
+-
+boost/bind.hpp
+-
+boost/ptr_container/ptr_vector.hpp
+-
+string
+-
+stdio.h
+-
+

@@ -1,22 +1,22 @@
 # The set of languages for which implicit dependencies are needed:
-SET(CMAKE_DEPENDS_LANGUAGES
+set(CMAKE_DEPENDS_LANGUAGES
   "CXX"
   )
 # The set of files for implicit dependencies of each language:
-SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/rdadmin/learning/muduo_source_code/ymuduo/muduo/base/tests/Exception_test.cc" "/home/rdadmin/learning/muduo_source_code/build/release/muduo/base/tests/CMakeFiles/exception_test.dir/Exception_test.cc.o"
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/yahui/learning/learning_muduo/ymuduo/muduo/base/tests/Exception_test.cc" "/home/yahui/learning/learning_muduo/build/release/muduo/base/tests/CMakeFiles/exception_test.dir/Exception_test.cc.o"
   )
-SET(CMAKE_CXX_COMPILER_ID "GNU")
-
-# Targets to which this target links.
-SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/rdadmin/learning/muduo_source_code/build/release/muduo/base/CMakeFiles/muduo_base.dir/DependInfo.cmake"
-  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
-SET(CMAKE_C_TARGET_INCLUDE_PATH
-  "/home/rdadmin/learning/muduo_source_code/ymuduo"
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/home/yahui/learning/learning_muduo/ymuduo"
   )
-SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
-SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
-SET(CMAKE_ASM_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
+
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/yahui/learning/learning_muduo/build/release/muduo/base/CMakeFiles/muduo_base.dir/DependInfo.cmake"
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")

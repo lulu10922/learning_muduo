@@ -1,3 +1,17 @@
+add_executable(CountDownLatch_test1 CountDownLatch_test1.cc)
+target_link_libraries(CountDownLatch_test1 muduo_base)
+
+add_executable(CountDownLatch_test2 CountDownLatch_test2.cc)
+target_link_libraries(CountDownLatch_test2 muduo_base)
+
+add_executable(log_test1 Log_test1.cc)
+target_link_libraries(log_test1 muduo_base)
+
 add_executable(reactor_test01 Reactor_test01.cc)
 target_link_libraries(reactor_test01 muduo_net)
 
+add_executable(reactor_test03 Reactor_test03.cc)
+target_link_libraries(reactor_test03 muduo_net)
+
+add_executable(reactor_test04 Reactor_test04.cc)
+target_link_libraries(reactor_test04 muduo_net)

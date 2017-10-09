@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/rdadmin/learning/muduo_source_code/ymuduo/muduo/base/Atomic.h
+/home/yahui/learning/learning_muduo/ymuduo/muduo/base/Atomic.h
 boost/noncopyable.hpp
 -
 stdint.h
 -
 
-/home/rdadmin/learning/muduo_source_code/ymuduo/muduo/base/tests/Atomic_unittest.cc
+/home/yahui/learning/learning_muduo/ymuduo/muduo/base/tests/Atomic_unittest.cc
 muduo/base/Atomic.h
 -
 assert.h

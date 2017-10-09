@@ -1,58 +1,76 @@
-# Install script for directory: /home/rdadmin/learning/muduo_source_code/ymuduo/muduo/base
+# Install script for directory: /home/yahui/learning/learning_muduo/ymuduo/muduo/base
 
 # Set the install prefix
-IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/home/rdadmin/learning/muduo_source_code/build/release-install")
-ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
+if(NOT DEFINED CMAKE_INSTALL_PREFIX)
+  set(CMAKE_INSTALL_PREFIX "/home/yahui/learning/learning_muduo/build/release-install")
+endif()
+string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
 # Set the install configuration name.
-IF(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
-  IF(BUILD_TYPE)
-    STRING(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
+if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
+  if(BUILD_TYPE)
+    string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
-  ELSE(BUILD_TYPE)
-    SET(CMAKE_INSTALL_CONFIG_NAME "release")
-  ENDIF(BUILD_TYPE)
-  MESSAGE(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
-ENDIF(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
+  else()
+    set(CMAKE_INSTALL_CONFIG_NAME "release")
+  endif()
+  message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
+endif()
 
 # Set the component getting installed.
-IF(NOT CMAKE_INSTALL_COMPONENT)
-  IF(COMPONENT)
-    MESSAGE(STATUS "Install component: \"${COMPONENT}\"")
-    SET(CMAKE_INSTALL_COMPONENT "${COMPONENT}")
-  ELSE(COMPONENT)
-    SET(CMAKE_INSTALL_COMPONENT)
-  ENDIF(COMPONENT)
-ENDIF(NOT CMAKE_INSTALL_COMPONENT)
+if(NOT CMAKE_INSTALL_COMPONENT)
+  if(COMPONENT)
+    message(STATUS "Install component: \"${COMPONENT}\"")
+    set(CMAKE_INSTALL_COMPONENT "${COMPONENT}")
+  else()
+    set(CMAKE_INSTALL_COMPONENT)
+  endif()
+endif()
 
 # Install shared libraries without execute permission?
-IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "1")
-ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
 
-IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/rdadmin/learning/muduo_source_code/build/release/lib/libmuduo_base.a")
-ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/yahui/learning/learning_muduo/build/release/lib/libmuduo_base.a")
+endif()
 
-IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/rdadmin/learning/muduo_source_code/build/release/lib/libmuduo_base_cpp11.a")
-ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/yahui/learning/learning_muduo/build/release/lib/libmuduo_base_cpp11.a")
+endif()
 
-IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/muduo/base" TYPE FILE FILES
-    "/home/rdadmin/learning/muduo_source_code/ymuduo/muduo/base/Atomic.h"
-    "/home/rdadmin/learning/muduo_source_code/ymuduo/muduo/base/Exception.h"
-    "/home/rdadmin/learning/muduo_source_code/ymuduo/muduo/base/copyable.h"
-    "/home/rdadmin/learning/muduo_source_code/ymuduo/muduo/base/Timestamp.h"
-    "/home/rdadmin/learning/muduo_source_code/ymuduo/muduo/base/Types.h"
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/muduo/base" TYPE FILE FILES
+    "/home/yahui/learning/learning_muduo/ymuduo/muduo/base/Types.h"
+    "/home/yahui/learning/learning_muduo/ymuduo/muduo/base/TimeZone.h"
+    "/home/yahui/learning/learning_muduo/ymuduo/muduo/base/Singleton.h"
+    "/home/yahui/learning/learning_muduo/ymuduo/muduo/base/LogFile.h"
+    "/home/yahui/learning/learning_muduo/ymuduo/muduo/base/Mutex.h"
+    "/home/yahui/learning/learning_muduo/ymuduo/muduo/base/Exception.h"
+    "/home/yahui/learning/learning_muduo/ymuduo/muduo/base/ThreadLocal.h"
+    "/home/yahui/learning/learning_muduo/ymuduo/muduo/base/ThreadPool.h"
+    "/home/yahui/learning/learning_muduo/ymuduo/muduo/base/StringPiece.h"
+    "/home/yahui/learning/learning_muduo/ymuduo/muduo/base/BlockingQueue.h"
+    "/home/yahui/learning/learning_muduo/ymuduo/muduo/base/BoundedBlockingQueue.h"
+    "/home/yahui/learning/learning_muduo/ymuduo/muduo/base/Atomic.h"
+    "/home/yahui/learning/learning_muduo/ymuduo/muduo/base/ProcessInfo.h"
+    "/home/yahui/learning/learning_muduo/ymuduo/muduo/base/Condition.h"
+    "/home/yahui/learning/learning_muduo/ymuduo/muduo/base/copyable.h"
+    "/home/yahui/learning/learning_muduo/ymuduo/muduo/base/CurrentThread.h"
+    "/home/yahui/learning/learning_muduo/ymuduo/muduo/base/Logging.h"
+    "/home/yahui/learning/learning_muduo/ymuduo/muduo/base/Thread.h"
+    "/home/yahui/learning/learning_muduo/ymuduo/muduo/base/LogStream.h"
+    "/home/yahui/learning/learning_muduo/ymuduo/muduo/base/FileUtil.h"
+    "/home/yahui/learning/learning_muduo/ymuduo/muduo/base/CountDownLatch.h"
+    "/home/yahui/learning/learning_muduo/ymuduo/muduo/base/Date.h"
+    "/home/yahui/learning/learning_muduo/ymuduo/muduo/base/Timestamp.h"
     )
-ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+endif()
 
-IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("/home/rdadmin/learning/muduo_source_code/build/release/muduo/base/tests/cmake_install.cmake")
+  include("/home/yahui/learning/learning_muduo/build/release/muduo/base/tests/cmake_install.cmake")
 
-ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
+endif()
 

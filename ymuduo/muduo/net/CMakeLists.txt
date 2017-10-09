@@ -6,7 +6,14 @@ if(NOT HAVE_ACCEPT4)
 endif()
 
 set(net_SRCS
+  Channel.cc
   EventLoop.cc
+  Poller.cc
+  poller/DefaultPoller.cc
+  poller/EPollPoller.cc
+  poller/PollPoller.cc
+  Timer.cc
+  TimerQueue.cc
   )
 
 add_library(muduo_net ${net_SRCS})
@@ -20,7 +27,9 @@ install(TARGETS muduo_net DESTINATION lib)
 install(TARGETS muduo_net_cpp11 DESTINATION lib)
 
 set(HEADERS
+  Channel.h
   EventLoop.h
+  TimerId.h
   )
 install(FILES ${HEADERS} DESTINATION include/muduo/net)
 

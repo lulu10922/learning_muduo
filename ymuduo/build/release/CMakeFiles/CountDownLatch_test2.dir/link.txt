@@ -1,1 +1,0 @@
-/usr/bin/c++   -O3 -DNDEBUG   CMakeFiles/CountDownLatch_test2.dir/CountDownLatch_test2.cc.o  -o CountDownLatch_test2 -rdynamic -lmuduo_base 

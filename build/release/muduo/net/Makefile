@@ -255,6 +255,36 @@ EventLoop.cc.s:
 	cd /home/yahui/learning/learning_muduo/build/release && $(MAKE) -f muduo/net/CMakeFiles/muduo_net_cpp11.dir/build.make muduo/net/CMakeFiles/muduo_net_cpp11.dir/EventLoop.cc.s
 .PHONY : EventLoop.cc.s
 
+EventLoopThread.o: EventLoopThread.cc.o
+
+.PHONY : EventLoopThread.o
+
+# target to build an object file
+EventLoopThread.cc.o:
+	cd /home/yahui/learning/learning_muduo/build/release && $(MAKE) -f muduo/net/CMakeFiles/muduo_net.dir/build.make muduo/net/CMakeFiles/muduo_net.dir/EventLoopThread.cc.o
+	cd /home/yahui/learning/learning_muduo/build/release && $(MAKE) -f muduo/net/CMakeFiles/muduo_net_cpp11.dir/build.make muduo/net/CMakeFiles/muduo_net_cpp11.dir/EventLoopThread.cc.o
+.PHONY : EventLoopThread.cc.o
+
+EventLoopThread.i: EventLoopThread.cc.i
+
+.PHONY : EventLoopThread.i
+
+# target to preprocess a source file
+EventLoopThread.cc.i:
+	cd /home/yahui/learning/learning_muduo/build/release && $(MAKE) -f muduo/net/CMakeFiles/muduo_net.dir/build.make muduo/net/CMakeFiles/muduo_net.dir/EventLoopThread.cc.i
+	cd /home/yahui/learning/learning_muduo/build/release && $(MAKE) -f muduo/net/CMakeFiles/muduo_net_cpp11.dir/build.make muduo/net/CMakeFiles/muduo_net_cpp11.dir/EventLoopThread.cc.i
+.PHONY : EventLoopThread.cc.i
+
+EventLoopThread.s: EventLoopThread.cc.s
+
+.PHONY : EventLoopThread.s
+
+# target to generate assembly for a file
+EventLoopThread.cc.s:
+	cd /home/yahui/learning/learning_muduo/build/release && $(MAKE) -f muduo/net/CMakeFiles/muduo_net.dir/build.make muduo/net/CMakeFiles/muduo_net.dir/EventLoopThread.cc.s
+	cd /home/yahui/learning/learning_muduo/build/release && $(MAKE) -f muduo/net/CMakeFiles/muduo_net_cpp11.dir/build.make muduo/net/CMakeFiles/muduo_net_cpp11.dir/EventLoopThread.cc.s
+.PHONY : EventLoopThread.cc.s
+
 Poller.o: Poller.cc.o
 
 .PHONY : Poller.o
@@ -456,6 +486,9 @@ help:
 	@echo "... EventLoop.o"
 	@echo "... EventLoop.i"
 	@echo "... EventLoop.s"
+	@echo "... EventLoopThread.o"
+	@echo "... EventLoopThread.i"
+	@echo "... EventLoopThread.s"
 	@echo "... Poller.o"
 	@echo "... Poller.i"
 	@echo "... Poller.s"

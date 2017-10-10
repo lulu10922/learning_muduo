@@ -80,10 +80,12 @@ set(CMAKE_DEPEND_INFO_FILES
   "muduo/base/tests/CMakeFiles/logstream_bench.dir/DependInfo.cmake"
   "muduo/net/CMakeFiles/muduo_net.dir/DependInfo.cmake"
   "muduo/net/CMakeFiles/muduo_net_cpp11.dir/DependInfo.cmake"
+  "tests/CMakeFiles/log_test1.dir/DependInfo.cmake"
   "tests/CMakeFiles/CountDownLatch_test2.dir/DependInfo.cmake"
   "tests/CMakeFiles/CountDownLatch_test1.dir/DependInfo.cmake"
-  "tests/CMakeFiles/log_test1.dir/DependInfo.cmake"
   "tests/CMakeFiles/reactor_test01.dir/DependInfo.cmake"
   "tests/CMakeFiles/reactor_test03.dir/DependInfo.cmake"
   "tests/CMakeFiles/reactor_test04.dir/DependInfo.cmake"
+  "tests/CMakeFiles/reactor_test05.dir/DependInfo.cmake"
+  "tests/CMakeFiles/reactor_test06.dir/DependInfo.cmake"
   )

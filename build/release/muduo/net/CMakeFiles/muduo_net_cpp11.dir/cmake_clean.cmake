@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/muduo_net_cpp11.dir/Channel.cc.o"
   "CMakeFiles/muduo_net_cpp11.dir/EventLoop.cc.o"
+  "CMakeFiles/muduo_net_cpp11.dir/EventLoopThread.cc.o"
   "CMakeFiles/muduo_net_cpp11.dir/Poller.cc.o"
   "CMakeFiles/muduo_net_cpp11.dir/poller/DefaultPoller.cc.o"
   "CMakeFiles/muduo_net_cpp11.dir/poller/EPollPoller.cc.o"

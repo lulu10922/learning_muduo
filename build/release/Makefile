@@ -400,6 +400,19 @@ muduo_net_cpp11/fast:
 .PHONY : muduo_net_cpp11/fast
 
 #=============================================================================
+# Target rules for targets named log_test1
+
+# Build rule for target.
+log_test1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 log_test1
+.PHONY : log_test1
+
+# fast build rule for target.
+log_test1/fast:
+	$(MAKE) -f tests/CMakeFiles/log_test1.dir/build.make tests/CMakeFiles/log_test1.dir/build
+.PHONY : log_test1/fast
+
+#=============================================================================
 # Target rules for targets named CountDownLatch_test2
 
 # Build rule for target.
@@ -424,19 +437,6 @@ CountDownLatch_test1: cmake_check_build_system
 CountDownLatch_test1/fast:
 	$(MAKE) -f tests/CMakeFiles/CountDownLatch_test1.dir/build.make tests/CMakeFiles/CountDownLatch_test1.dir/build
 .PHONY : CountDownLatch_test1/fast
-
-#=============================================================================
-# Target rules for targets named log_test1
-
-# Build rule for target.
-log_test1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 log_test1
-.PHONY : log_test1
-
-# fast build rule for target.
-log_test1/fast:
-	$(MAKE) -f tests/CMakeFiles/log_test1.dir/build.make tests/CMakeFiles/log_test1.dir/build
-.PHONY : log_test1/fast
 
 #=============================================================================
 # Target rules for targets named reactor_test01
@@ -477,6 +477,32 @@ reactor_test04/fast:
 	$(MAKE) -f tests/CMakeFiles/reactor_test04.dir/build.make tests/CMakeFiles/reactor_test04.dir/build
 .PHONY : reactor_test04/fast
 
+#=============================================================================
+# Target rules for targets named reactor_test05
+
+# Build rule for target.
+reactor_test05: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 reactor_test05
+.PHONY : reactor_test05
+
+# fast build rule for target.
+reactor_test05/fast:
+	$(MAKE) -f tests/CMakeFiles/reactor_test05.dir/build.make tests/CMakeFiles/reactor_test05.dir/build
+.PHONY : reactor_test05/fast
+
+#=============================================================================
+# Target rules for targets named reactor_test06
+
+# Build rule for target.
+reactor_test06: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 reactor_test06
+.PHONY : reactor_test06
+
+# fast build rule for target.
+reactor_test06/fast:
+	$(MAKE) -f tests/CMakeFiles/reactor_test06.dir/build.make tests/CMakeFiles/reactor_test06.dir/build
+.PHONY : reactor_test06/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -508,12 +534,14 @@ help:
 	@echo "... logstream_bench"
 	@echo "... muduo_net"
 	@echo "... muduo_net_cpp11"
+	@echo "... log_test1"
 	@echo "... CountDownLatch_test2"
 	@echo "... CountDownLatch_test1"
-	@echo "... log_test1"
 	@echo "... reactor_test01"
 	@echo "... reactor_test03"
 	@echo "... reactor_test04"
+	@echo "... reactor_test05"
+	@echo "... reactor_test06"
 .PHONY : help
 
 

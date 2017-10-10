@@ -79,6 +79,17 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -122,17 +133,6 @@ test/fast: test
 
 .PHONY : test/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # The main all target
 all: cmake_check_build_system
 	cd /home/yahui/learning/learning_muduo/build/release && $(CMAKE_COMMAND) -E cmake_progress_start /home/yahui/learning/learning_muduo/build/release/CMakeFiles /home/yahui/learning/learning_muduo/build/release/tests/CMakeFiles/progress.marks
@@ -166,6 +166,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+tests/CMakeFiles/log_test1.dir/rule:
+	cd /home/yahui/learning/learning_muduo/build/release && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/log_test1.dir/rule
+.PHONY : tests/CMakeFiles/log_test1.dir/rule
+
+# Convenience name for target.
+log_test1: tests/CMakeFiles/log_test1.dir/rule
+
+.PHONY : log_test1
+
+# fast build rule for target.
+log_test1/fast:
+	cd /home/yahui/learning/learning_muduo/build/release && $(MAKE) -f tests/CMakeFiles/log_test1.dir/build.make tests/CMakeFiles/log_test1.dir/build
+.PHONY : log_test1/fast
+
+# Convenience name for target.
 tests/CMakeFiles/CountDownLatch_test2.dir/rule:
 	cd /home/yahui/learning/learning_muduo/build/release && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/CountDownLatch_test2.dir/rule
 .PHONY : tests/CMakeFiles/CountDownLatch_test2.dir/rule
@@ -194,21 +209,6 @@ CountDownLatch_test1: tests/CMakeFiles/CountDownLatch_test1.dir/rule
 CountDownLatch_test1/fast:
 	cd /home/yahui/learning/learning_muduo/build/release && $(MAKE) -f tests/CMakeFiles/CountDownLatch_test1.dir/build.make tests/CMakeFiles/CountDownLatch_test1.dir/build
 .PHONY : CountDownLatch_test1/fast
-
-# Convenience name for target.
-tests/CMakeFiles/log_test1.dir/rule:
-	cd /home/yahui/learning/learning_muduo/build/release && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/log_test1.dir/rule
-.PHONY : tests/CMakeFiles/log_test1.dir/rule
-
-# Convenience name for target.
-log_test1: tests/CMakeFiles/log_test1.dir/rule
-
-.PHONY : log_test1
-
-# fast build rule for target.
-log_test1/fast:
-	cd /home/yahui/learning/learning_muduo/build/release && $(MAKE) -f tests/CMakeFiles/log_test1.dir/build.make tests/CMakeFiles/log_test1.dir/build
-.PHONY : log_test1/fast
 
 # Convenience name for target.
 tests/CMakeFiles/reactor_test01.dir/rule:
@@ -254,6 +254,36 @@ reactor_test04: tests/CMakeFiles/reactor_test04.dir/rule
 reactor_test04/fast:
 	cd /home/yahui/learning/learning_muduo/build/release && $(MAKE) -f tests/CMakeFiles/reactor_test04.dir/build.make tests/CMakeFiles/reactor_test04.dir/build
 .PHONY : reactor_test04/fast
+
+# Convenience name for target.
+tests/CMakeFiles/reactor_test05.dir/rule:
+	cd /home/yahui/learning/learning_muduo/build/release && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/reactor_test05.dir/rule
+.PHONY : tests/CMakeFiles/reactor_test05.dir/rule
+
+# Convenience name for target.
+reactor_test05: tests/CMakeFiles/reactor_test05.dir/rule
+
+.PHONY : reactor_test05
+
+# fast build rule for target.
+reactor_test05/fast:
+	cd /home/yahui/learning/learning_muduo/build/release && $(MAKE) -f tests/CMakeFiles/reactor_test05.dir/build.make tests/CMakeFiles/reactor_test05.dir/build
+.PHONY : reactor_test05/fast
+
+# Convenience name for target.
+tests/CMakeFiles/reactor_test06.dir/rule:
+	cd /home/yahui/learning/learning_muduo/build/release && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/reactor_test06.dir/rule
+.PHONY : tests/CMakeFiles/reactor_test06.dir/rule
+
+# Convenience name for target.
+reactor_test06: tests/CMakeFiles/reactor_test06.dir/rule
+
+.PHONY : reactor_test06
+
+# fast build rule for target.
+reactor_test06/fast:
+	cd /home/yahui/learning/learning_muduo/build/release && $(MAKE) -f tests/CMakeFiles/reactor_test06.dir/build.make tests/CMakeFiles/reactor_test06.dir/build
+.PHONY : reactor_test06/fast
 
 CountDownLatch_test1.o: CountDownLatch_test1.cc.o
 
@@ -417,6 +447,60 @@ Reactor_test04.cc.s:
 	cd /home/yahui/learning/learning_muduo/build/release && $(MAKE) -f tests/CMakeFiles/reactor_test04.dir/build.make tests/CMakeFiles/reactor_test04.dir/Reactor_test04.cc.s
 .PHONY : Reactor_test04.cc.s
 
+Reactor_test05.o: Reactor_test05.cc.o
+
+.PHONY : Reactor_test05.o
+
+# target to build an object file
+Reactor_test05.cc.o:
+	cd /home/yahui/learning/learning_muduo/build/release && $(MAKE) -f tests/CMakeFiles/reactor_test05.dir/build.make tests/CMakeFiles/reactor_test05.dir/Reactor_test05.cc.o
+.PHONY : Reactor_test05.cc.o
+
+Reactor_test05.i: Reactor_test05.cc.i
+
+.PHONY : Reactor_test05.i
+
+# target to preprocess a source file
+Reactor_test05.cc.i:
+	cd /home/yahui/learning/learning_muduo/build/release && $(MAKE) -f tests/CMakeFiles/reactor_test05.dir/build.make tests/CMakeFiles/reactor_test05.dir/Reactor_test05.cc.i
+.PHONY : Reactor_test05.cc.i
+
+Reactor_test05.s: Reactor_test05.cc.s
+
+.PHONY : Reactor_test05.s
+
+# target to generate assembly for a file
+Reactor_test05.cc.s:
+	cd /home/yahui/learning/learning_muduo/build/release && $(MAKE) -f tests/CMakeFiles/reactor_test05.dir/build.make tests/CMakeFiles/reactor_test05.dir/Reactor_test05.cc.s
+.PHONY : Reactor_test05.cc.s
+
+Reactor_test06.o: Reactor_test06.cc.o
+
+.PHONY : Reactor_test06.o
+
+# target to build an object file
+Reactor_test06.cc.o:
+	cd /home/yahui/learning/learning_muduo/build/release && $(MAKE) -f tests/CMakeFiles/reactor_test06.dir/build.make tests/CMakeFiles/reactor_test06.dir/Reactor_test06.cc.o
+.PHONY : Reactor_test06.cc.o
+
+Reactor_test06.i: Reactor_test06.cc.i
+
+.PHONY : Reactor_test06.i
+
+# target to preprocess a source file
+Reactor_test06.cc.i:
+	cd /home/yahui/learning/learning_muduo/build/release && $(MAKE) -f tests/CMakeFiles/reactor_test06.dir/build.make tests/CMakeFiles/reactor_test06.dir/Reactor_test06.cc.i
+.PHONY : Reactor_test06.cc.i
+
+Reactor_test06.s: Reactor_test06.cc.s
+
+.PHONY : Reactor_test06.s
+
+# target to generate assembly for a file
+Reactor_test06.cc.s:
+	cd /home/yahui/learning/learning_muduo/build/release && $(MAKE) -f tests/CMakeFiles/reactor_test06.dir/build.make tests/CMakeFiles/reactor_test06.dir/Reactor_test06.cc.s
+.PHONY : Reactor_test06.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -425,17 +509,19 @@ help:
 	@echo "... depend"
 	@echo "... install"
 	@echo "... rebuild_cache"
+	@echo "... edit_cache"
 	@echo "... list_install_components"
 	@echo "... install/strip"
 	@echo "... install/local"
+	@echo "... test"
+	@echo "... log_test1"
 	@echo "... CountDownLatch_test2"
 	@echo "... CountDownLatch_test1"
-	@echo "... log_test1"
-	@echo "... test"
 	@echo "... reactor_test01"
 	@echo "... reactor_test03"
 	@echo "... reactor_test04"
-	@echo "... edit_cache"
+	@echo "... reactor_test05"
+	@echo "... reactor_test06"
 	@echo "... CountDownLatch_test1.o"
 	@echo "... CountDownLatch_test1.i"
 	@echo "... CountDownLatch_test1.s"
@@ -454,6 +540,12 @@ help:
 	@echo "... Reactor_test04.o"
 	@echo "... Reactor_test04.i"
 	@echo "... Reactor_test04.s"
+	@echo "... Reactor_test05.o"
+	@echo "... Reactor_test05.i"
+	@echo "... Reactor_test05.s"
+	@echo "... Reactor_test06.o"
+	@echo "... Reactor_test06.i"
+	@echo "... Reactor_test06.s"
 .PHONY : help
 
 

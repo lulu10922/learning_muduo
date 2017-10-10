@@ -8,6 +8,7 @@ endif()
 set(net_SRCS
   Channel.cc
   EventLoop.cc
+  EventLoopThread.cc
   Poller.cc
   poller/DefaultPoller.cc
   poller/EPollPoller.cc
